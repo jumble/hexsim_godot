@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwdk1is6lv4fe"]
+
+[ext_resource type="Script" path="res://hex_grid.gd" id="1_hhoi1"]
+[ext_resource type="Script" path="res://Camera2D.gd" id="2_jb5h5"]
+
+[node name="HexGridScene" type="Node2D"]
+
+[node name="HexGrid" type="Node2D" parent="."]
+script = ExtResource("1_hhoi1")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
+script = ExtResource("2_jb5h5")
+zoom_invert = true
